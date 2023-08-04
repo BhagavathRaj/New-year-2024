@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+body{
+    background: url(338435.jpg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+    background-attachment: fixed;
+}
+.container{
+    top:80px;
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    right: 100px;
+    background: url(338435.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(10,7,2,0.5),
+                0 0 0 100px rgba(0,0,2,0.5)
+}
+.container h2{
+    text-align: center;
+    font-size: 10em;
+    line-height: 0.7em;
+    color:#09172581;
+    margin-top: -70px;
+}
+.container h2 span{
+    display: block;
+    font-size: 0.2em;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.countdown{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.countdown div {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: #333;
+    color: #fff;
+    margin:  0 15px;
+    font-size:3em;
+    font-weight: 500;
+
+}
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: rgb(133, 133, 128);
+    color: #333;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 400;
+
+}
+.countdown #day:before{
+    content: "days";
+}
+.countdown #hour:before{
+    content: "hours";
+}
+.countdown #minute:before{
+    content: "minutess";
+}
+.countdown #second:before{
+    content: "seconds";
+}
